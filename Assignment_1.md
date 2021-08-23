@@ -15,7 +15,7 @@ Here's the information that you gather:
 •	Pharmacies appoint a supervisor for each contract. There must always be a supervisor for each contract, but the contract supervisor can change over the lifetime of the contract.
 •	Draw an ER diagram that captures the above information. Identify any constraints that are not captured by the ER diagram.
  
- <img src ="images/assignment_1_ER.png" >
+ <img src ="CS314/images/assignment_1_ER.png" >
 
 
 Here are some of the relations:
