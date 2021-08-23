@@ -12,7 +12,8 @@ Experiment:2			ER Model to Relational Model		Date: 17.8.2021
 
  b.  Translate the ER model you have drawn in Experiment1 to a corresponding relational model. Keep all your assumptions and make the translation.
  
- ![assignment_1_ER](https://user-images.githubusercontent.com/51349461/130432402-e0afbc39-377d-4077-b5aa-0551efd361f8.png)
+ ![download](https://user-images.githubusercontent.com/51349461/130484070-1c9b2de6-d5a4-47a9-8e60-e61989511d2f.png)
+
  -------------------------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/51349461/130432804-3c9d2084-9d4b-487b-bddc-4de6d78821af.png)
 
