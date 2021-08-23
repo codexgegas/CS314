@@ -16,6 +16,8 @@ Here's the information that you gather:
 •	Draw an ER diagram that captures the above information. Identify any constraints that are not captured by the ER diagram.
  
  
+ 
+ 
 ==== https://drive.google.com/file/d/1v3C6LBNFXsIpIqAvqN1I1HXjmRs3CWiR/view?usp=sharing=====
 
 Here are some of the relations:
