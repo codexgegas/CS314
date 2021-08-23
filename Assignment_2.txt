@@ -1,3 +1,49 @@
+a) Employee-problem
+
+CREATE TABLE Employ_
+(
+  EmployeeID INT NOT NULL,
+  Name INT NOT NULL,
+  DOB INT NOT NULL,
+  FN INT NOT NULL,
+  LS INT NOT NULL,
+  PRIMARY KEY (EmployeeID)
+);
+
+CREATE TABLE Project
+(
+  Project_id INT NOT NULL,
+  Project_name INT NOT NULL
+);
+
+CREATE TABLE Company
+(
+  Company_Name INT NOT NULL,
+  Location INT NOT NULL,
+  PRIMARY KEY (Company_Name)
+);
+
+CREATE TABLE Salary
+(
+  Salary_id INT NOT NULL,
+  Mode_of_payment INT NOT NULL,
+  Date_of_salary INT NOT NULL,
+  PRIMARY KEY (Salary_id)
+);
+
+CREATE TABLE Employ__Contact_No.
+(
+  Contact_No. INT NOT NULL,
+  EmployeeID INT NOT NULL,
+  PRIMARY KEY (Contact_No., EmployeeID),
+  FOREIGN KEY (EmployeeID) REFERENCES Employ_(EmployeeID)
+);
+
+
+
+
+b)RX-problem
+
 
 Generate SQL
 CREATE TABLE Patient
