@@ -1,0 +1,47 @@
+
+Generate SQL
+CREATE TABLE Patient
+(
+  SSN INT NOT NULL,
+  Name INT NOT NULL,
+  age INT NOT NULL,
+  address INT NOT NULL,
+  PRIMARY KEY (SSN)
+);
+
+CREATE TABLE Drug
+(
+  Trade_name INT NOT NULL,
+  Formula INT NOT NULL,
+  PRIMARY KEY (Trade_name)
+);
+
+CREATE TABLE Phramacy
+(
+  name INT NOT NULL,
+  Address INT NOT NULL,
+  Pharma_id INT NOT NULL,
+  phone_no INT NOT NULL,
+  PRIMARY KEY (Pharma_id),
+  UNIQUE (name),
+  UNIQUE (phone_no)
+);
+
+CREATE TABLE company
+(
+  Name INT NOT NULL,
+  Phone_number INT NOT NULL,
+  PRIMARY KEY (Name),
+  UNIQUE (Phone_number)
+);
+
+CREATE TABLE Doctor
+(
+  SSN INT NOT NULL,
+  specialty INT NOT NULL,
+  Name INT NOT NULL,
+  Years_of_experience_ INT NOT NULL,
+  SSN INT NOT NULL,
+  PRIMARY KEY (SSN),
+  FOREIGN KEY (SSN) REFERENCES Patient(SSN)
+);
