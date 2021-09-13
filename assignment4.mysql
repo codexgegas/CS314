@@ -1,0 +1,70 @@
+/*LAB PRACTICE ASSIGNMENT:
+
+Create a table EMPLOYEE with following schema:
+
+(Emp_no, E_name, E_address, E_ph_no, Dept_no, Dept_name,Job_id , Salary)*/
+
+
+Create TABLE EMPLOYEE {
+    Emp_no varchar(50),
+    E_name varchar(50),
+    E_address varchar(50),
+    E_ph_no varchar(50),
+    Dept_no varchar(50),
+    Dept_name varchar(50),
+    job_id varchar(50),
+    Salary int(7),
+}
+
+
+--Write SQL queries for following question:
+
+1.	Insert aleast 5 rows in the table.
+
+      Insert INTO EMPLOYEE{
+    f_name        varchar(50);
+    l_name        varchar(50);
+    relationship  varchar(50);
+    contact_no    varchar(50); 
+    nationatility varchar(50);
+}
+
+--2.	Display all the information of EMP table.
+
+ SELECT * FROM EMPLOYEE;
+
+
+--3.	Display the record of each employee who works in department D10.
+
+ SELECT * FROM EMPLOYEE;
+WHERE Dept_no= D10;
+
+
+--4.	Update the city of Emp_no-12 with current city as Nagpur.
+
+ UPDATE EMPLOYEE
+SET Emp_no= 'Emp_n0-12', city='Nagpur'
+WHERE Emp_id=12;
+
+--5.	Display the Employee Id and Employee Name who works in department MECH.
+
+ SELECT Emp_id E_name FROM EMPLOYEE
+WHERE Dept_name= MECH
+
+--6.	Delete the information of employee James.
+
+DELETE FROM EMPLOYEE WHERE E_name='james'
+
+--7.	Display the complete record of employees working in SALES Department.
+ SELECT * FROM EMPLOYEE;
+WHERE Dept_name= SALES;
+
+--8.	Create a dummy table Emp and copy the records of EMPLOYEE table.
+Create TABLE Emp
+AS SELECT * FROM EMPLOYEE;
+
+--9.	Create another dummy table Emp_Dum and copy only specific columns (Emp_no, E_name,Job_id) of EMPLOYEE table.
+CREATE TABLE Emp_dum;
+AS SELECT E_name Job_id Emp_no FROM EMPLOYEE    
+
+
