@@ -1,4 +1,4 @@
-a) Employee-problem
+--a) Employee-problem
 
 CREATE TABLE Employ_
 (
@@ -42,7 +42,7 @@ CREATE TABLE Employ__Contact_No.
 
 
 
-b)RX-problem
+--b)RX-problem
 
 
 Generate SQL
