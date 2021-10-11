@@ -1,6 +1,6 @@
 
 //exp-7
-Create TABLE EMPLOYEE {
+Create TABLE EMPLOYEE (
     Emp_no varchar(50);
     E_name varchar(50);
     E_address varchar(50);
@@ -10,7 +10,7 @@ Create TABLE EMPLOYEE {
     job_id varchar(50);
     designation VARCHAR(50);
     Salary int(7);
-}
+)
 //1
 SELECT Dept_no from emp UNION select FROM dept;
 //2
@@ -20,18 +20,19 @@ select Dept_no from emp minus SELECT dept_no from dept;
 
 //exp-8
 
-create table sailors[
+create table sailors(
 
     sid intger not null,
     sname varchar(10),
     raiting intger,
     age reak,
     CONSTRAINT PK_sailors PRIMARY KEY (sid);
-]
+)
 
-Create TABLE REVERVES[
-     sid integer not null,
+Create TABLE REVERVES [
+    
 bid integer not null,
+sid intger not null,
 day datetime not null,
 CONSTRAINT PK_reserves PRIMARY KEY (sid, bid, day),
 FOREIGN KEY (sid) REFERENCES sailors(sid),
