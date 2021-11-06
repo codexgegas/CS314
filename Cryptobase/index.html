@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title> </title>
+    <script>
+        function getData() {
+
+            let name = document.querySelector("#Name").value || "all";
+            let xhr = new XMLHttpRequest();
+            let reqstr = "http://localhost/Vik/config.php?name=('" + name.replace(",","','") + "')"; // Put your path of config.php here
+
+            xhr.open('GET', reqstr, false);
+
+            try {
+                document.querySelector("#Name").disabled = true;
+                xhr.send();
+                if (xhr.status != 200) {
+                    alert(`Error ${xhr.status}: ${xhr.statusText}`);
+                } else {
+                    console.log(xhr.response);
+                    let old = document.querySelector("body > table > tbody").outerHTML;
+                    document.querySelector("body > table > tbody").outerHTML = old + xhr.response;                 
+
+                }
+            } catch (err) { // instead of onerror
+                alert("Request failed");
+            }
+            document.querySelector("#Name").disabled = false;
+        }
+    </script>
+
+
+    <style type=text/css> table{ boder: 2px solid red; background-color: #FFC; } th{ border-bottom:5px solid #000; } td{
+        border-bottom:2px solid #666; } </style> </head> <body>
+        <h1>Coin Table</h1>
+       
+<!--  -->
+<hr><hr>
+<form>
+  <label for="Name">Stocl Name</label><br>
+  <input type="text" id="Name" name="Name" placeholder="put values in comma seprated manner"><br>
+  <input  type="button" value="Submit" onclick = "getData()">
+</form>
+<table>
+   
+        <tr>
+            <th>ID</th>
+            <th>coin name</th>
+            <th>coin symbol</th>
+            <th>Current_Price</th>
+             <th>High 24</th>
+             <th>low 24</th>
+             <th>Market Cap</th>
+        </tr>
+        <div id="table">    
+</div>
+</table>
+</body>
+</html>
